@@ -1076,6 +1076,9 @@ pygtt==1.1.2
 # homeassistant.components.version.sensor
 pyhaversion==2.0.3
 
+# homeassistant.components.heos
+pyheos==0.2.0
+
 # homeassistant.components.hikvision.binary_sensor
 pyhik==0.2.2
 

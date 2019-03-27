@@ -208,6 +208,9 @@ pydeconz==53
 # homeassistant.components.zwave
 pydispatcher==2.0.5
 
+# homeassistant.components.heos
+pyheos==0.2.0
+
 # homeassistant.components.homematic
 pyhomematic==0.1.58
 
