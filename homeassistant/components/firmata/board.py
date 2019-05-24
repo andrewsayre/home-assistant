@@ -37,9 +37,9 @@ class FirmataBoard:
             _LOGGER.error('Error connecting with PyMata board %s: %s', self.name, repr(err))
             return False
 
-        hass.states.async_set(self._prefix + 'FirmwareVersion', await self.api.get_firmware_version())
-        hass.states.async_set(self._prefix + 'ProtocolVersion', await self.api.get_protocol_version())
-        hass.states.async_set(self._prefix + 'PymataVersion', await self.api.get_pymata_version())
+        # hass.states.async_set(self._prefix + 'FirmwareVersion', await self.api.get_firmware_version())
+        # hass.states.async_set(self._prefix + 'ProtocolVersion', await self.api.get_protocol_version())
+        # hass.states.async_set(self._prefix + 'PymataVersion', await self.api.get_pymata_version())
 
         _LOGGER.info('Firmata connection successful for %s', self.name)
         return True
@@ -81,7 +81,7 @@ class FirmataBoardPin(Entity):
         self._mode = None
         self._state = False
         pass
-    
+
     @property
     def should_poll(self):
         """No polling needed."""

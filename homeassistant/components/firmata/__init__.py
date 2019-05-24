@@ -54,7 +54,7 @@ async def async_setup(hass, config):
 
     for board_conf in boards:
         name = board_conf[CONF_NAME]
-        
+
         conf_data = {
           'name': board_conf[CONF_NAME]
 		}
@@ -73,7 +73,7 @@ async def async_setup(hass, config):
             return False
 
         hass.data[DOMAIN][name] = board
-        
+
     hass.async_create_task(async_load_platform(hass, 'switch', DOMAIN, {}, config))
-        
+
     return True
